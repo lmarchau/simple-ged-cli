@@ -51,7 +51,7 @@ export default {
         {headers: { 'Content-Type': 'application/json' }})
         .then(response => {
           this.storeToken(response.body.token)
-          this.router.push({name: 'home'})
+          this.$router.push({name: 'home'})
         },
           error => {
             console.log(error)
